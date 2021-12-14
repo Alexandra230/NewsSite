@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Religion</title>
+    <link rel="stylesheet" href="../CSS/index.css" type="text/css" />
+    <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <ul class="navbar">
+        <li><a class="logo" href="./index.html">News App</a></li>
+        <li>
+          <form>
+            <button class="form_btn" type="submit"></button>
+            <input class="form_inpt" id="elastic" type="text" placeholder="Искать здесь..." />
+          </form>
+        </li>
+        <li>
+          <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+            <ul class="menu__box">
+              <li class="menu__item">
+                <div class="dropdown">
+                  <button onclick="myFunction()" class="dropbtn">Categories</button>
+                  <div id="myDropdown" class="dropdown-content">
+                    <div class="left_text">
+                      <a href="./sport.html">Sport</a>
+                      <a href="./world.html">World</a>
+                      <a href="./covid.html">Covid</a>
+                      <a href="./business.html">Business</a>
+                    </div>
+                    <div class="right_text">
+                      <a href="./politics.html">Politics</a>
+                      <a href="./science.html">Science</a>
+                      <a href="./religion.html">Religion</a>
+                      <a href="./health.html">Health</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="menu__item">
+                <button class="dropbtn" onclick="trend()">
+                  <img
+                    src="https://img.icons8.com/external-those-icons-lineal-color-those-icons/24/000000/external-flash-photography-images-those-icons-lineal-color-those-icons.png"
+                  />Trending news
+                </button>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <div hidden id="spinner"></div>
+      <div id="main_news" class="main_news elastic"></div>
+      <div id="news" class="news elastic"></div>
+      <span class="knopka"
+        ><a>Scroll to top <img src="../img/Vector.png" alt="arrow top" /></a
+      ></span>
+    </main>
+    <footer class="footer">
+      <p><b>News App</b> 2021 copyright all rights reserved</p>
+    </footer>
+    <script src="../JS/religion.js"></script>
+    <script src="../JS/details.js"></script>
+    <script src="../JS/scrolltotop.js"></script>
+    <script src="../JS/dropbtn.js"></script>
+    <script src="../JS/trending.js"></script>
+    <script src="../JS/search.js"></script>
+  </body>
+</html>
